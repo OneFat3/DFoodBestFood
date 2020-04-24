@@ -1,199 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>Mogo</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
-    rel="stylesheet">
+  <title>Delivery Food - доставка еды на дом</title>
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-
-
 <body>
-
-  <header class="header">
-    <div class="container">
-      <div class="header_inner">
-        <div class="header_logo">MoGo</div>
-        <nav class="nav">
-          <a href="#" class="nav_link active">About</a>
-          <a href="#" class="nav_link">Service</a>
-          <a href="#" class="nav_link">Work</a>
-          <a href="#" class="nav_link">Blog</a>
-          <a href="#" class="nav_link">Contact</a>
-          <a href="#" class="nav_link"></a>
-          <a href="#" class="nav_link"></a>
-        </nav>
+  <!-- Шапка сайта -->
+  <div class="container">
+    <header class="header">
+      <a href="index.html" class="logo  wow bounceInLeft "><img src="img/logo.svg" alt="logo"> </a>
+      <input type="text" class="input input-address" placeholder="Адрес доставки">
+      <div class="buttons">
+        <button class="button button-primary">
+          <img src="img/login.svg" alt="user" class="button-icon">
+          <span class="button-text">Войти</span>
+        </button>
+        <button class="button" id="cart-button">
+          <img src="img/cart.svg" alt="cart" class="button-icon">
+          <span class="button-text">Корзина</span>
+        </button>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <div class="intro">
+
+  </div>
+  <main class="main">
     <div class="container">
-      <div class="intro_inner">
-        <h2 class="intro_suptitle">Creative Template</h2>
-        <h1 class="intro_title">Welcome to MoGo</h1>
+      <!-- PromoBanner -->
+      <section class="promo">
+        <h1 class="promo-title">Онлайн-сервис <br> доставки еды на дом</h1>
+        <p class="promo-text">Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком</p>
+      </section>
+      <!-- Restaurants -->
+      <section class="rests">
+        <div class="section-heading">
+          <h2 class="section-title">Рестораны</h2>
+          <input type="text" class="input-search input" placeholder="Поиск блюд и ресторанов">
+        </div>
 
-        <a href="#" class="btn">Learn More</a>
-      </div>
+        <div class="cards">
 
-      <div class="slider">
-        <div class="container">
-          <div class="intro_slider">
+          <a href="rest1.html" class=" card wow zoomIn " data-wow-delay="0.2s">
+            <img src="img/card1.jpg" alt="Card1" class="card-img">
+            <div class="card-text">
+              <div class="card-heading">
+                <h3 class="card-title">Пицца плюс</h3>
+                <span class="card-teg tag">50 мин</span>
 
-            <div class="slider_item active"><span class="slider_num">01</span> Intro</div>
-            <div class="slider_item">
-              <span class="slider_num">02</span> Work
+              </div>
+              <!-- /.card-heading -->
+              <div class="card-info">
+                <div class="rating"><img src="img/rating.svg" alt="" class="rating-star">4,5</div>
+                <div class="price">От 900 ₽</div>
+                <div class="category">Пицца</div>
+              </div>
+              <!-- /.card-info -->
             </div>
-            <div class="slider_item"></span class="slider_num">03</span> About</div>
-            <div class="slider_item"><span class="slider_num">04</span> Contacts</div>
+          </a>
+          <!-- /.card1 -->
+          <a href="rest1.html" class="card wow zoomIn" data-wow-delay="0.4s">
+            <img src="img/card2.jpg" alt="Card2" class="card-img">
+            <div class="card-text">
+              <div class="card-heading">
+                <h3 class="card-title">Тануки</h3>
+                <span class="card-teg tag">120 мин</span>
+
+              </div>
+              <!-- /.card-heading -->
+              <div class="card-info">
+                <div class="rating"><img src="img/rating.svg" alt="" class="rating-star">5</div>
+                <div class="price">От 1000 ₽</div>
+                <div class="category">Японская кухня</div>
+              </div>
+              <!-- /.card-info -->
+            </div>
+          </a>
+          <!-- /.card2 -->
+          <a href="rest1.html" class=" card wow zoomIn" data-wow-delay="0.6s">
+            <img src="img/card3.jpg" alt="Card3" class="card-img">
+            <div class="card-text">
+              <div class="card-heading">
+                <h3 class="card-title">FoodBand</h3>
+                <span class="card-teg tag">60 мин</span>
+
+              </div>
+              <!-- /.card-heading -->
+              <div class="card-info">
+                <div class="rating">
+                  <img src="img/rating.svg" alt="" class="rating-star">
+                  4</div>
+                <div class="price">От 800 ₽</div>
+                <div class="category">Разная еда</div>
+              </div>
+              <!-- /.card-info -->
+            </div>
+          </a>
+          <!-- /.card3 -->
+          <a href="rest1.html" class=" card wow zoomIn" data-wow-delay="0.2s">
+            <img src="img/card4.jpg" alt="Card4" class="card-img">
+            <div class="card-text">
+              <div class="card-heading">
+                <h3 class="card-title">Жадина-пицца</h3>
+                <span class="card-teg tag">55 мин</span>
+
+              </div>
+              <!-- /.card-heading -->
+              <div class="card-info">
+                <div class="rating"><img src="img/rating.svg" alt="" class="rating-star">4,8</div>
+                <div class="price">От 900 ₽</div>
+                <div class="category">Пицца</div>
+              </div>
+              <!-- /.card-info -->
+            </div>
+          </a>
+          <!-- /.card4 -->
+          <a href="rest1.html" class=" card wow zoomIn" data-wow-delay="0.4s">
+            <img src="img/card5.jpg" alt="Card5" class="card-img">
+            <div class="card-text">
+              <div class="card-heading">
+                <h3 class="card-title">Точка еды</h3>
+                <span class="card-teg tag">10 мин</span>
+
+              </div>
+              <!-- /.card-heading -->
+              <div class="card-info">
+                <div class="rating"><img src="img/rating.svg" alt="" class="rating-star">5,5</div>
+                <div class="price">От 200 ₽</div>
+                <div class="category">Еда для фриланса</div>
+              </div>
+              <!-- /.card-info -->
+            </div>
+          </a>
+          <!-- /.card5 -->
+          <a href="rest1.html" class=" card wow zoomIn" data-wow-delay="0.6s">
+            <img src="img/card6.jpg" alt="Card6" class="card-img">
+            <div class="card-text">
+              <div class="card-heading">
+                <h3 class="card-title">PizzaBurger</h3>
+                <span class="card-teg tag">50 мин</span>
+
+              </div>
+              <!-- /.card-heading -->
+              <div class="card-info">
+                <div class="rating"><img src="img/rating.svg" alt="" class="rating-star">5</div>
+                <div class="price">От 1200 ₽</div>
+                <div class="category">Пицца, Бургеры</div>
+              </div>
+              <!-- /.card-info -->
+            </div>
+          </a>
+          <!-- /.card6 -->
+        </div>
+        <!-- /.cards -->
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-block">
+        <a href="index.html" class="logo footer-logo"><img src="img/logo.svg" alt="logo"> </a>
+        <nav class="footer-nav">
+          <a href="#" class="footer-link">Ресторанам </a>
+          <a href="#" class="footer-link">Курьерам</a>
+          <a href="#" class="footer-link">Пресс-центр</a>
+          <a href="#" class="footer-link">Контакты</a>
+        </nav>
+        <div class="social-links">
+          <a href="#" class="social-link"><img src="img/insta.svg" alt="Instagram"></a>
+          <a href="#" class="social-link"><img src="img/fb.svg" alt="Facebook"></a>
+          <a href="#" class="social-link"><img src="img/vk.svg" alt="VKontakte"></a>
+        </div>
+      </div>
+      <!-- /.footer-block -->
+    </div>
+  </footer>
+  <div class="modal">
+
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title">Корзина</h3>
+        <button class="close" id="close-modal">&times;
+        </button>
+      </div>
+      <!-- /.modal-header -->
+      <div class="modal-body">
+        <div class="food-row">
+          <span class="food-name">
+            Ролл угорь стандарт
+          </span>
+          <strong class="food-price">250 ₽</strong>
+          <div class="food-counter">
+            <button class="counter-button">-</button>
+            <span class="counter">1</span>
+            <button class="counter-button">+</button>
           </div>
         </div>
+        <div class="food-row">
+          <span class="food-name">
+            Ролл угорь стандарт
+          </span>
+          <strong class="food-price">250 ₽</strong>
+          <div class="food-counter">
+            <button class="counter-button">-</button>
+            <span class="counter">1</span>
+            <button class="counter-button">+</button>
+          </div>
+        </div>
+
       </div>
+      <!-- /.modal-body -->
+      <div class="modal-footer">
+        <span class="modal-pricetag">500 ₽</span>
+        <div class="footer-buttons">
+          <button class="button button-primary">Оформить заказ</button>
+          <button class="button" id="close">Отмена</button>
+        </div>
+      </div>
+      <!-- /.modal-footer -->
     </div>
+    <!-- /.modal-dialog -->
   </div>
-  <!-- /.intro -->
-  <section class="section">
-    <div class="container">
-      <div class="section_header">
-        <h2 class="section_suptitle">Story about us</h2>
-        <h3 class="section_title">What we do</h3>
-        <div class="section_text">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus hic sequi consequuntur quibusdam autem
-            nobis debitis rerum deleniti. Adipisci pariatur quidem eum similique nisi minima magnam doloribus non!
-            Autem, ipsum.</p>
-        </div>
-      </div>
-      <div class="about">
-        <div class="about_item">
-          <div class="about_img"><img src="assets/img/images/Section_about/1.png" alt="" srcset=""></div>
-          <div class="about_text">super team</div>
-        </div>
-        <div class="about_item">
-          <div class="about_img"><img src="assets/img/images/Section_about/2.png" alt="" srcset=""></div>
-          <div class="about_text">super team</div>
-        </div>
-        <div class="about_item">
-          <div class="about_img"><img src="assets/img/images/Section_about/3.png" alt="" srcset=""></div>
-          <div class="about_text">super team</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="statistics">
-    <div class="container">
-      <div class="stat">
-        <div class="stat_item">
-          <span class="stat_num">42</span>
-          <p class="stat_text">Web Design Projects</p>
-        </div>
-        <!-- /.stat_item1 -->
-        <div class="stat_item">
-          <span class="stat_num">123</span>
-          <p class="stat_text">happy client</p>
-        </div>
-        <!-- /.stat_item2 -->
-        <div class="stat_item">
-          <span class="stat_num">15</span>
-          <p class="stat_text">award winner</p>
-        </div>
-        <!-- /.stat_item3 -->
-        <div class="stat_item">
-          <span class="stat_num">99</span>
-          <p class="stat_text">cup of coffee</p>
-        </div>
-        <!-- /.stat_item4 -->
-        <div class="stat_item">
-          <span class="stat_num">24</span>
-          <p class="stat_text">members</p>
-        </div>
-        <!-- /.stat_item5 -->
-      </div>
-    </div>
-    <!-- /.container -->
-  </div>
-  <!-- /.statistics -->
-
-  <section class="section">
-    <div class="container">
-      <div class="section_header">
-        <h2 class="section_suptitle">We work with</h2>
-        <h3 class="section_title">Amazing Services</h3>
-      </div>
-      <div class="services">
-        <div class="services_item">
-          <img src="assets/img/images/Section_Services/1.png" alt="img_1" class="services_img">
-          <h4 class="services_title">Photography</h4>
-          <p class="services_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-        </div>
-        <!-- /.service_item_1 -->
-        <div class="services_item">
-          <img src="assets/img/images/Section_Services/2.png" alt="img_2" class="services_img">
-          <h4 class="services_title">Web Design</h4>
-          <p class="services_text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-        </div>
-        <!-- /.service_item_2 -->
-        <div class="services_item">
-          <img src="assets/img/images/Section_Services/3.png" alt="img_3" class="services_img">
-          <h4 class="services_title">Creativity</h4>
-          <p class="services_text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-        </div>
-        <!-- /.service_item_3 -->
-      </div>
-      <!-- /.services 1-3 -->
-      <hr>
-      <div class="services">
-        <div class="services_item">
-          <img src="assets/img/images/Section_Services/4.png" alt="img_4" class="services_img">
-          <h4 class="services_title">seo</h4>
-          <p class="services_text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-        </div>
-        <!-- /.service_item_4 -->
-        <div class="services_item">
-          <img src="assets/img/images/Section_Services/5.png" alt="img_5" class="services_img">
-          <h4 class="services_title">Css/Html</h4>
-          <p class="services_text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-        </div>
-        <!-- /.service_item_5 -->
-        <div class="services_item">
-          <img src="assets/img/images/Section_Services/6.png" alt="img_6" class="services_img">
-          <h4 class="services_title">digital</h4>
-          <p class="services_text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-        </div>
-        <!-- /.service_item_6 -->
-      </div>
-      <!-- /.services  4-6-->
-    </div>
-    <!-- container -->
-  </section>
-  <!-- /.section Services -->
-
-  <section class="section section_devices">
-    <div class="container">
-      <div class="section_header">
-        <h2 class="section_suptitle">For all devices</h2>
-        <h3 class="section_title">Unique design</h3>
-      </div>
-    </div>
-    <div class="devices">
-      <img src="assets/img/images/Section_devices/tablet.png" alt="tablet" class="devices_img">
-      <img src="assets/img/images/Section_devices/phone.png" alt="phone" class="devices_img devices_img_phone"></div>
-  </section>
-  <!-- /.Devices -->
-  <section class="section">
-    <div class="container">
-      <div class="section_header">
-        <h2 class="section_suptitle">Service</h2>
-        <h3 class="section_title">what we do</h3>
-        <p class="section_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat. </p>
-      </div>
-  </section>
+  <script src="js/wow.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
